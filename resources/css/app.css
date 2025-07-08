@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+[x-cloak] {
+    display: none;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.galleria-bordi-arrotondati img {
+    border-radius: 1rem !important; 
+}
+
+.flickity-button {
+  background: transparent !important;
+  box-shadow: none;
+  border: none;
+}
+
+.flickity-prev-next-button {
+  width: 40px;
+  height: 40px;
+}
+
+.flickity-button-icon {
+  fill: rgba(255, 255, 255, 0.5);
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+}
+
+.flickity-button:hover .flickity-button-icon {
+  fill: rgba(255, 255, 255, 0.8);
+}
+
+.flickity-button:disabled {
+  display: none;
+}
+
+.flickity-page-dots {
+  bottom: -25px;
+}
+
+.flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
+}
+
+.carousel {
+  overflow: visible !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
