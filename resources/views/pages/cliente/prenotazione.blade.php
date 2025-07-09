@@ -163,13 +163,14 @@
                 Totale complessivo: €{{ number_format($totale, 2) }}
             </p>
 
-            <div class="flex justify-center gap-4 mt-8">
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
                 <a href="{{ route('camere') }}"
-                   class="px-8 py-3 text-sm font-bold tracking-wide uppercase rounded-full border border-white/20 text-white backdrop-blur-md bg-white/5 hover:bg-white/10 transition">
+                class="px-8 py-3 text-sm font-bold tracking-wide uppercase rounded-full border border-white/20 text-white backdrop-blur-md bg-white/5 hover:bg-white/10 transition text-center w-full sm:w-auto">
                     Annulla
                 </a>
 
-                <x-button type="submit" class="px-8 py-3 text-sm font-bold tracking-wide uppercase">
+                <x-button type="submit"
+                        class="px-8 py-3 text-sm font-bold tracking-wide uppercase w-full sm:w-auto text-center">
                     Salva Prenotazione
                 </x-button>
             </div>

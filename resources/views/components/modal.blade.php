@@ -21,7 +21,6 @@ $maxWidth = [
     class="fixed inset-0 overflow-y-auto px-4 py-6 sm:px-0 z-50"
     style="display: none;"
 >
-    <!-- Overlay -->
     <div x-show="show"
          class="fixed inset-0 bg-black/60 transition-opacity"
          x-on:click="show = false"
@@ -33,7 +32,6 @@ $maxWidth = [
          x-transition:leave-end="opacity-0">
     </div>
 
-    <!-- Modale -->
     <div x-show="show"
          class="mb-6 bg-white/5 text-white border border-white/10 backdrop-blur-md rounded-3xl shadow-2xl sm:w-full {{ $maxWidth }} sm:mx-auto transition-all"
          x-trap.inert.noscroll="show"

@@ -20,7 +20,7 @@ class PrenotazioniSeeder extends Seeder
             'data_inizio' => '2025-07-20',
             'data_fine' => '2025-07-25',
             'eventuali_richieste_cliente' => 'Vorrei avere una camera ai piani alti, se possibile.',
-            'prezzo_totale_camera' => 11000.00,
+            'prezzo_totale_camera' => 1600.00,
             'numero_persone' => 4,
         ]);
 
@@ -31,7 +31,7 @@ class PrenotazioniSeeder extends Seeder
             'data_inizio' => '2025-08-20',
             'data_fine' => '2025-08-23',
             'eventuali_richieste_cliente' => 'Richiedo la colazione in camera.',
-            'prezzo_totale_camera' => 10500.00,
+            'prezzo_totale_camera' => 800.00,
             'numero_persone' => 2,
         ]);
 
@@ -42,8 +42,41 @@ class PrenotazioniSeeder extends Seeder
             'data_inizio' => '2025-07-25',
             'data_fine' => '2025-07-26',
             'eventuali_richieste_cliente' => null,
-            'prezzo_totale_camera' => 1800.00,
+            'prezzo_totale_camera' => 400.00,
             'numero_persone' => 1,
+        ]);
+
+                Prenotazione::create([
+            'user_id' => 3,
+            'camera_id' => 1, 
+            'stato_id' => 2, 
+            'data_inizio' => '2025-08-10',
+            'data_fine' => '2025-08-11',
+            'eventuali_richieste_cliente' => 'Vorrei avere una camera ai piani alti, se possibile.',
+            'prezzo_totale_camera' => 400.00,
+            'numero_persone' => 2,
+        ]);
+
+        Prenotazione::create([
+            'user_id' => 3,
+            'camera_id' => 2,
+            'stato_id' => 4, 
+            'data_inizio' => '2025-06-20',
+            'data_fine' => '2025-06-23',
+            'eventuali_richieste_cliente' => 'Richiedo la colazione in camera.',
+            'prezzo_totale_camera' => 800.00,
+            'numero_persone' => 4,
+        ]);
+
+        Prenotazione::create([
+            'user_id' => 3,
+            'camera_id' => 3,
+            'stato_id' => 3, 
+            'data_inizio' => '2025-08-25',
+            'data_fine' => '2025-08-26',
+            'eventuali_richieste_cliente' => null,
+            'prezzo_totale_camera' => 400.00,
+            'numero_persone' => 6,
         ]);
     }
 }
